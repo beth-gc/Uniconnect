@@ -1,0 +1,112 @@
+/* ===== CLUBES ===== */
+
+.clubes_contenedor {
+    padding: 5% 8%;
+}
+
+.clubes_titulo {
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.clubes_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 28px;
+}
+
+.club_card {
+    background: linear-gradient(145deg, #F2F7A1 0%, #edf29a 100%);
+    padding: 28px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.club_card_header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.club_categoria {
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--fuente-montserrat);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.club_card h3 {
+    font-family: var(--fuente-krona);
+    color: var(--color-primario);
+    font-size: 1.05rem;
+}
+
+.club_card p {
+    font-family: var(--fuente-montserrat);
+    color: var(--color-primario);
+    opacity: 0.85;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.club_card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-elevada);
+}
+
+.club_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(69, 60, 103, 0.1);
+}
+
+.club_miembros {
+    font-family: var(--fuente-montserrat);
+    color: var(--color-primario);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.club_badge_miembro {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--fuente-montserrat);
+}
+
+@media (max-width:768px) {
+    .clubes_contenedor {
+        padding: 5%;
+    }
+    
+    .clubes_titulo {
+        font-size: 1.4rem;
+    }
+
+    .clubes_grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,162 @@
+/* ===== DETALLE DE CLUB ===== */
+
+.detalle_contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 5% 8%;
+}
+
+.detalle_card {
+    background: linear-gradient(145deg, #F2F7A1 0%, #edf29a 100%);
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: var(--sombra-elevada);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detalle_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalle_volver {
+    color: var(--color-cuaternario);
+    text-decoration: none;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transicion);
+}
+
+.detalle_volver:hover {
+    color: var(--color-primario);
+}
+
+.detalle_titulo {
+    font-family: var(--fuente-krona);
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.detalle_descripcion {
+    font-family: var(--fuente-montserrat);
+    color: var(--color-primario);
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.detalle_stats {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.detalle_stat {
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 20px 32px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 130px;
+}
+
+.stat_numero {
+    font-family: var(--fuente-krona);
+    font-size: 1.8rem;
+    color: var(--color-terciario);
+}
+
+.stat_label {
+    font-family: var(--fuente-montserrat);
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detalle_actividades h3 {
+    font-family: var(--fuente-krona);
+    color: var(--color-primario);
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.detalle_actividades ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: var(--fuente-montserrat);
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detalle_actividades li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(69, 60, 103, 0.06);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.actividad_fecha {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.actividad_nombre {
+    font-weight: 600;
+    flex: 1;
+}
+
+.badge_tipo {
+    background: var(--color-cuaternario);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.detalle_acciones {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+@media (max-width:768px) {
+    .detalle_card {
+        padding: 24px;
+    }
+
+    .detalle_stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalle_stat {
+        width: 100%;
+    }
+
+    .detalle_acciones {
+        flex-direction: column;
+    }
+
+    .detalle_header {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+}

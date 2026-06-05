@@ -1,0 +1,22 @@
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# PHP
+vendor/
+composer.lock
+
+# Environment / Config (descomenta si quieres excluir credenciales)
+# baseDatos.php
+
+# Logs
+*.log
+error_log
