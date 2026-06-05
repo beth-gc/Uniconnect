@@ -18,6 +18,25 @@
 
 ---
 
+## 📸 Capturas de Pantalla
+
+### Página de inicio
+![Página de inicio](assets/screenshots/01_inicio.png)
+
+### Inicio de sesión
+![Inicio de sesión](assets/screenshots/02_login.png)
+
+### Registro de usuario
+![Registro de usuario](assets/screenshots/03_registro.png)
+
+### Explorar clubes
+![Lista de clubes](assets/screenshots/04_clubes.png)
+
+### Gestión de actividades
+![Lista de actividades](assets/screenshots/05_actividades.png)
+
+---
+
 ## 🛠️ Tecnologías
 
 | Capa | Tecnología |
