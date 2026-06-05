@@ -47,4 +47,3 @@ function mostrar_alerta() {
         echo "</div>";
     }
 }
-?>

@@ -16,4 +16,3 @@ function conectar_bd()
     
     return $conexion;
 }
-?>

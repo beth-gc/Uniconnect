@@ -4,4 +4,3 @@ if (!isset($_SESSION['id_usuario'])) {
     header('Location: login.php?status=error&msg=sesion_requerida');
     exit;
 }
-?>
